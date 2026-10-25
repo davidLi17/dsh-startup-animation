@@ -12,11 +12,11 @@ DeepSeek Harness 的开机启动动画插件：黑底上鲸鱼点亮 → 人物�
 
 ## 安装
 
-    dsh plugin --profile desktop add github:<用户名>/dsh-startup-animation
+    dsh plugin --profile desktop add github:davidLi17/dsh-startup-animation
 
 本地开发用软链接（改完重启即生效）：
 
-    git clone https://github.com/<用户名>/dsh-startup-animation
+    git clone https://github.com/davidLi17/dsh-startup-animation
     dsh plugin --profile desktop add link:D:/path/to/dsh-startup-animation
 
 装完重启 DSH，下一次启动就能看到。卸载：
