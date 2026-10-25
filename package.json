@@ -1,0 +1,47 @@
+{
+  "name": "dsh-startup-animation",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness 开机启动动画插件：鲸鱼点亮 → 人物淡入 → 扫描线 → 光轨 → 横幅展开 → 字标 → HARNESS，支持自定义开场",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./assets/*": "./lib/assets/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "startup",
+    "splash",
+    "animation"
+  ],
+  "author": "DavidLi",
+  "homepage": "https://github.com/davidLi17/dsh-startup-animation#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidLi17/dsh-startup-animation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidLi17/dsh-startup-animation/issues"
+  }
+}

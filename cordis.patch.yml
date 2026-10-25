@@ -1,0 +1,5 @@
+# 把启动动画插件挂进 profile 的 loader 树（node 半只是一个空插件，
+# 真正干活的是浏览器半 lib/client.js 里注册到 shell.overlay 的覆盖层）。
+- insert:
+    - id: startup-animation
+      name: dsh-startup-animation
